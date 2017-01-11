@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>StartBootstrap Remake 2</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  	<link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top affix-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">HOME</a>
+			</div>
+			<div class="collapse navbar-collapse pull-right">
+				<ul class="nav navbar-nav">
+					<li><a class="navbar-link" href="#">about</a></li>
+					<li><a class="navbar-link" href="#">services</a></li>
+					<li><a class="navbar-link" href="#">portfolio</a></li>
+					<li><a class="navbar-link" href="#">contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="row">
+		<div>
+			<header class="text-center">
+				<div class="container">
+					<div id="header-content">
+						<h1>Your Favorite Source of Free Bootstrap Themes</h1>
+						<hr class="hrOrange">	
+						<p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+						<a class="btn btn-primary btn-xl page-scroll" href="#">find out more</a>
+					</div>				
+				</div>
+			</header>		
+		</div>	
+	</div>
+
+	<section id="about">
+		<div class="row text-center">
+			<div class="container">
+				<div id="about-content">
+					<h2>We've got what you need!</h2>
+					<hr class="hrWhite">
+					<p>Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+					<a class="btn btn-primary btn-xl page-scroll" href="#">get started</a>				
+				</div>			
+			</div>
+		</div>
+	</section>
+
+	<section id="services">
+		<div class="row text-center">
+			<div class="container">
+				<div id="services-content">
+					<h2>At your service!</h2>
+					<hr class="hrOrange">
+				</div>
+			</div>
+		</div>
+		<div class="row" id="services-list">
+			<div class="container">
+
+						<div class="col-md-3">
+							<div class="service">
+								<i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+								<h3>Remade Template</h3>
+								<p>Our templates are updated regularly so they don't break.</p>
+							</div>
+						</div>	
+						<div class="col-md-3">
+							<div class="service">
+								<i class="fa fa-code fa-4x"></i>
+								<h3>Ready to Ship</h3>
+								<p>You can use this theme as is, or you can make changes!</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="service">
+								<i class="fa fa-database fa-4x"></i>
+								<h3>Up to Date</h3>
+								<p>We update dependencies to keep things fresh.</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="service">
+								<i class="fa fa-bolt fa-4x"></i>
+								<h3>Remade Template</h3>
+								<p>Our templates are updated regularly so they don't break.</p>
+							</div>
+						</div>				
+	
+			</div>
+		</div>
+	</section>
+
+	<section id="portfolio">
+		<div class="row">
+
+				<div class="col-md-4 portfolio-item">
+					<img class="img-responsive" src="img/thumbnails/1.jpg">
+					<h3 class="hiddenText">Project</h3>
+					<p class="hiddenText">Description</p>
+				</div>
+				<div class="col-md-4 portfolio-item">
+					<img class="img-responsive" src="img/thumbnails/2.jpg">
+					<h3 class="hiddenText">Project</h3>
+					<p class="hiddenText">Description</p>
+				</div>
+				<div class="col-md-4 portfolio-item">
+					<img class="img-responsive" src="img/thumbnails/3.jpg">
+					<h3 class="hiddenText">Project</h3>
+					<p class="hiddenText">Description</p>
+				</div>
+
+
+		</div>
+		<div class="row">
+			
+				<div class="col-md-4 portfolio-item">
+					<img class="img-responsive" src="img/thumbnails/4.jpg">
+					<h3 class="hiddenText">Project</h3>
+					<p class="hiddenText">Description</p>
+				</div>
+				<div class="col-md-4 portfolio-item">
+					<img class="img-responsive" src="img/thumbnails/5.jpg">
+					<h3 class="hiddenText">Project</h3>
+					<p class="hiddenText">Description</p>
+				</div>
+				<div class="col-md-4 portfolio-item">
+					<img class="img-responsive" src="img/thumbnails/6.jpg">
+					<h3 class="hiddenText">Project</h3>
+					<p class="hiddenText">Description</p>
+				</div>
+
+				
+		</div>
+	</section>
+
+	<section id="contact">
+	
+</section>
+
+<style type="text/css">
+	.portfolioHover{
+		z-index: -1;
+	}
+  .color-nav{
+    background-color: white;
+  }
+  .color-nav li a{
+    color: #F05F40;
+  }
+</style>
+
+<script>
+	$("#portfolio img").hover(
+  function () {
+    $(this).addClass('portfolioHover');
+  }, 
+  function () {
+    $(this).removeClass('portfolioHover');
+  }
+  );
+
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 100) {
+        $("nav").addClass("color-nav");
+    } else {
+        $("nav").removeClass("color-nav");
+    }
+  });
+
+</script>
+
+	<script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

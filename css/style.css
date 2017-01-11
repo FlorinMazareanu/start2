@@ -102,6 +102,9 @@ header #header-content a{
 	margin-top:2%;
 	margin-bottom: 2%;
 }
+#services{
+	margin-bottom: 20px;
+}
 .service{
 	text-align: center;
 }

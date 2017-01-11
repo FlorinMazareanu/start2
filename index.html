@@ -12,8 +12,13 @@
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="/">HOME</a>
+				<button type="button" class="navbar-toggle" data-toggle = "collapse" data-target="#nav-collapse">
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+      				</button>
 			</div>
-			<div class="collapse navbar-collapse pull-right">
+			<div class="collapse navbar-collapse pull-right" id="nav-collapse">
 				<ul class="nav navbar-nav">
 					<li><a class="navbar-link" href="#">about</a></li>
 					<li><a class="navbar-link" href="#">services</a></li>
@@ -145,42 +150,43 @@
 </section>
 
 <style type="text/css">
-	.portfolioHover{
-		z-index: -1;
-	}
-  .color-nav{
-    background-color: white;
-  }
-  .color-nav li a{
-    color: #F05F40;
-  }
+.navbar-default {
+  background: transparent;
+  border: none;
+  transition: 0.2s all linear;	
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+
+.navbar-default.change-color {
+  background: white;
+ 
+}
 </style>
 
-<script>
-	$("#portfolio img").hover(
-  function () {
-    $(this).addClass('portfolioHover');
-  }, 
-  function () {
-    $(this).removeClass('portfolioHover');
-  }
-  );
 
-  $(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-
-    if (scroll >= 100) {
-        $("nav").addClass("color-nav");
-    } else {
-        $("nav").removeClass("color-nav");
-    }
-  });
-
-</script>
 
 	<script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	
+	    <script>
+		jQuery(document).ready(function($) {
+		  $(window).scroll(function() {
+		    var scrollPos = $(window).scrollTop(),
+		        navbar = $('.navbar-default');
+		        lia = $('.navbar-default li a');
+
+		    if (scrollPos > 20) {
+		      navbar.addClass('change-color');
+		      lia
+		    } else {
+		      navbar.removeClass('change-color');
+		    }
+		  });
+		});
+	</script>
 
 </body>
 </html>
